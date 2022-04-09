@@ -31,6 +31,14 @@ function App() {
 					user: user //here the first user is the name of the property of the action object and the other one the user object that gets returned from the getMe() method.
 				})
 			}); //this returns a promise
+
+			spotify.getUserPlaylists().then((playlists) => {
+				dispatch({
+					type: 'SET_PLAYLISTS',
+					playlists: playlists,
+				})
+			})
+
 		}
 
 	}, []);
