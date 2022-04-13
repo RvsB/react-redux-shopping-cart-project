@@ -1,7 +1,7 @@
 // https://developer.spotify.com/documentation/web-playback-sdk/quick-start/
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://trensetters-spotify-clone.web.app";
 const clientId = "b3cf1e4365ec4ea99e7c562dbd233320";
 
 const scopes = [ // this basically contains the scopes we will have access to while using the app, it allows us to get the correct permissions to do things like play a song on spotify
@@ -10,6 +10,7 @@ const scopes = [ // this basically contains the scopes we will have access to wh
     "user-read-playback-state",
     "user-top-read",
     "user-modify-playback-state",
+    "streaming",
 ];
 
 export const getTokenFromUrl = () => { //this is to pull the access token from the url

@@ -16,7 +16,7 @@ function Footer() {
             <div className="footer__left">
                 <img 
                 className="footer__albumLogo"
-                src="" 
+                src="https://i1.sndcdn.com/artworks-CBSCSRbuBE3AcVJl-zvFhfA-t500x500.jpg" 
                 alt="" />
                 <div className="footer__songInfo">
                     <h4>Yeah!</h4>
