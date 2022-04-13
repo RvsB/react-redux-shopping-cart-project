@@ -36,6 +36,14 @@ function App() {
 				dispatch({
 					type: 'SET_PLAYLISTS',
 					playlists: playlists,
+				});
+			});
+
+			spotify.getPlaylist('37i9dQZEVXcXq39G0f5zR0')
+			.then(response => {
+				dispatch({
+					type: "SET_DISCOVER_WEEKLY",
+					discover_weekly: response,
 				})
 			})
 
